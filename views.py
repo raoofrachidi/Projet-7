@@ -10,7 +10,7 @@ from grandpybot.messages import *
 
 
 app = Flask(__name__)
-google_api_key = os.environ.get('GM_API_KEY')
+google_api_key = "AIzaSyC5ySLJJEg2yVmQ5JcNzFEM2-fcM42EWnU"
 
 parser = Parser(STOP_WORDS)
 gmap = GMaps(google_api_key)
