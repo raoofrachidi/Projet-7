@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/bootstrap.min.css') }}">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+    <title>Grandpy Bot, le papy-robot</title>
+
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+
+    <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="header-heading">Grandpy Bot </h1>
+            <h2><small>Le Papy Robot, le grand manie-tout</small></h2>
+            <img src="{{ url_for('static', filename='img/papybot.jpg') }}" alt="Grandpy"/>
+        </div>
+        <hr>
+        <div class="input-group mb-3">
+            <input name="question" type="text" class="form-control" placeholder="Posez votre question à Grandpy ici" aria-describedby="button-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="submit">Demander au grand sage</button>
+            </div>
+        </div>
+        <div class="loader"></div>
+        <div id="grandpyanswer">
+            <div class="msg"><p><strong>Grandpy: </strong>Que veux-tu savoir mon enfant ?</p></div>
+        </div>
+        <div id= "map" class="border border-primary"></div>
+        <footer class="card text-center">
+            <div class="card-body">
+                <p>Projet 7 - Créez GrandPy Bot, le papy-robot</p>
+            </div>
+            <div class="card-footer">
+                <p>Raoof Rachidi - <a href="https://github.com/raoofrachidi/Projet-7" class="badge badge-primary"> Mon projet sur GitHub</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2.3.3/dist/umd/popper.min.js"></script>
+    <script src="{{ url_for('static', filename='bootstrap/bootstrap.min.js') }}"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5ySLJJEg2yVmQ5JcNzFEM2-fcM42EWnU&callback=initMap"
+    async defer></script>
+</body>
+</html>
