@@ -2,7 +2,7 @@
 """
 import googlemaps
 
-google_api_key = "AIzaSyAhUZ_RhV6olDMn_pLVm8Pby3UXSnlqeOI"
+google_api_key = "AIzaSyC71Qx-GXf4edGJ43FvsEw9e9Pr0qs5PFA"
 
 
 class GMaps:
