@@ -21,7 +21,7 @@ semantic-version==2.5.0
 six==1.11.0
 soupsieve==2.0
 termcolor==1.1.0
-urllib3==1.24.2
+urllib3==1.26.5
 virtualenv==20.0.18
 wcwidth==0.1.9
 Werkzeug==0.15.3
