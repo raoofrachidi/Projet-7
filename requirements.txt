@@ -24,5 +24,5 @@ termcolor==1.1.0
 urllib3==1.24.2
 virtualenv==20.0.18
 wcwidth==0.1.9
-Werkzeug==0.15.3
+Werkzeug==0.15.5
 wikipedia==1.4.0
